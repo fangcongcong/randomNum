@@ -1,0 +1,73 @@
+﻿<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>积分宝消费养老</title>
+		<link href="css/index.css?p=5" rel="stylesheet" />
+		<link href="css/common.css" rel="stylesheet" />
+		<script src="js/adaptive.js"></script>
+	</head>
+	<body>
+		<!--<div class="loading-wrap">
+			<div class="item"><img class="icon-loading" src="images/load.png"/></div>
+		</div>-->
+		<div class="db-content" style="display: none;">
+			<div class="paihangbang"><img src="images/paihangbang.png"/></div>
+			<div class="wangqi"><a href="./wangqiList.html"><img src="images/wangqi.png"/></a></div>
+			<div class="icon-xing"><img src="images/ico_xing2.png"/></div>
+			<div class="icon-xing icon-xing2"><img src="images/ico_xing2.png"/></div>
+			<div class="icon-xing icon-xing3"><img src="images/ico_xing2.png"/></div>
+			<div class="icon-xing icon-xing4"><img src="images/ico_xing2.png"/></div>
+			<div class="banner">
+				<img src="images/banner.png" />
+				<span class="bonus">积分奖池：0</span>
+			</div>
+			<div class="needCredits"><p class="tip">2积分/每次</p></div>
+			<div class="random-wrap">
+				<p>幸运数</p>
+				<div class="js-random-wrap" style="margin-top: 0.44rem; font-size: 0.79rem; font-weight: bold;">
+					<span id="first">-</span>
+					<span id="second">-</span>
+					<span id="third">-</span>
+				</div>
+				<div>
+					<span class="star"></span>
+					<span class="star"></span>
+					<span class="star"></span>
+				</div>
+			</div>
+			<div class="btn-wrap">
+				<div class="btn" id="start">获取幸运数</div>
+				<span class="btn-ten">-2积分</span>
+			</div>
+			<div class="my-integral">我的积分:<span class="integralNum">0</span></div>
+			<div class="rules">
+				<div class="rules-title"></div>
+				<section>
+					<p>【活动说明】</p>
+					<p class="rules-tips-one">每获取一个幸运数字，需要消耗2积分，积分投入奖池；</p>
+					<p>幸运数字由电脑随机生成，按大小排列，如果数字相同，则较早的数字排在靠前；</p>
+					<p>前5名瓜分奖池里95%的积分，另外5%作为平台维护费用；</p>
+					<p>【活动时间】</p>
+					<p>每天一次，开始时间0:00，截止时间24:00；</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+		<script src="js/common.js" type="text/javascript"></script>
+		<script src="js/index.js?v=2" type="text/javascript"></script>
+		<script type='text/javascript'>
+		// 获取某个时间格式的时间戳
+		var stringTime = "2018-02-09 23:59:59";
+		var timestamp2 = Date.parse(new Date(stringTime));
+		timestamp2 = timestamp2 / 1000;
+		var timestamp = (new Date()).getTime()/1000;
+		if(timestamp > timestamp2)
+		{
+			 $(".needCredits .tip").text('2积分/每次');
+			 $(".rules-tips-one").text('每获取一个幸运数字，需要消耗2积分，积分投入奖池；');
+		}
+		
+  		</script>
+	</body>
+</html>

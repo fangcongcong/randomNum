@@ -1,0 +1,39 @@
+.loading-wrap{
+	width: 100%; 
+	height: 100%; 
+	background: rgba(0,0,0,0.6); 
+	position: fixed; 
+	top: 0px; 
+	left: 0px;
+	z-index: 2147483647; 
+	text-align: center;
+	
+}
+
+.loading-wrap .item{
+	margin-top: 55%;
+}
+
+.loading-wrap .item .icon-loading{
+	width: 2.1rem;
+	animation: dian 2.4s ease-in-out infinite 0s alternate;
+}
+
+@keyframes dian{
+	0%{-ms-transform: scale(0.4) rotate(0deg); transform: scale(0.4) rotate(0deg); opacity:0.8;}
+	20%{opacity:0.2;}
+	60%{opacity:0.7;}
+	100%{-ms-transform: scale(1) rotate(360deg); transform: scale(1) rotate(360deg); opacity:0.3;}
+}
+@-moz-keyframes dian{
+	0%{-ms-transform: scale(0.4) rotate(0deg); transform: scale(0.4) rotate(0deg); opacity:0.8;}
+	20%{opacity:0.2;}
+	60%{opacity:0.7;}
+	100%{-ms-transform: scale(1) rotate(360deg); transform: scale(1) rotate(360deg); opacity:0.3;}
+}
+@-webkit-keyframes dian{
+	0%{-ms-transform: scale(0.4) rotate(0deg); transform: scale(0.4) rotate(0deg); opacity:0.8;}
+	20%{opacity:0.2;}
+	60%{opacity:0.7;}
+	100%{-ms-transform: scale(1) rotate(360deg); transform: scale(1) rotate(360deg); opacity:0.3;}
+}
